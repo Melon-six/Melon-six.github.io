@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2024-12-04T13:00:44.492Z</updated>
+  <updated>2024-12-04T16:18:41.033Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -21,16 +21,20 @@
     <link href="http://example.com/2024/12/04/%E5%91%BD%E5%90%8D%E7%A9%BA%E9%97%B4/"/>
     <id>http://example.com/2024/12/04/%E5%91%BD%E5%90%8D%E7%A9%BA%E9%97%B4/</id>
     <published>2024-12-03T16:00:00.000Z</published>
-    <updated>2024-12-04T13:00:44.492Z</updated>
+    <updated>2024-12-04T16:18:41.033Z</updated>
     
-    <content type="html"><![CDATA[<img src="https://www.keaitupian.cn/cjpic/frombd/2/253/33528619/2562967573.jpg"><h2 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h2><p>命名空间主要是为了解决同一作用域中定义重复的元素而导致代码混乱，命名空间通过全局作用域分割独立空间来解决以上问题</p><h2 id="实例"><a href="#实例" class="headerlink" title="实例"></a>实例</h2><p>#include&lt;stdio.h&gt;<br>int rand &#x3D; 10;<br>int main()<br>{<br>    printf(“%d\n”,rand);<br>    return 0;<br>}</p><p>此时正常，当时如果在头文件中加入rand函数所在的头文件就会出现计算机运行程序时找到了两个rand函数，而出现错误</p><h2 id="用法"><a href="#用法" class="headerlink" title="用法"></a>用法</h2><p>定义命名空间时使用namespace，后面接定义空间的名称并且接{}，然后再{}中接空间成员</p><p>命名空间可以嵌套，类似C语言中的循环嵌套，但是命名空间只能在全局范围内定义</p><p>使用命名空间内成语有三种方法</p><p>第一：使用作用域限定符<a><a href="https://blog.csdn.net/2302_78391795/article/details/142230911">【C++指南】作用域限定符 :: 使用详解_c++ 限定作用域-CSDN博客</a></a></p><p>第二：将命名空间全部展开（cpp using namespace xxx）</p><p>此方法有风险，三思而后行</p><p>第三：将命名空间部分展开（ using XXX :: xxx;）<br>可以在不全部展开的情况下不使用作用域限定符！！！</p><h2 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h2><p>这个概念适用于c++与c#，其他语言部分可用但是不推荐</p>]]></content>
+    <content type="html"><![CDATA[<img src="https://www.keaitupian.cn/cjpic/frombd/2/253/33528619/2562967573.jpg">    <figure class="figure-image">      <img src="http://qiniu.sukoshi.xyz/src/images/68686407_p0.jpg" alt="带描述带图片" loading="lazy" />      <figcaption>带描述带图片</figcaption>    </figure>  <h2 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h2><p>命名空间主要是为了解决同一作用域中定义重复的元素而导致代码混乱，命名空间通过全局作用域分割独立空间来解决以上问题</p><h2 id="实例"><a href="#实例" class="headerlink" title="实例"></a>实例</h2><p>#include&lt;stdio.h&gt;<br>int rand &#x3D; 10;<br>int main()<br>{<br>    printf(“%d\n”,rand);<br>    return 0;<br>}</p><p>此时正常，当时如果在头文件中加入rand函数所在的头文件就会出现计算机运行程序时找到了两个rand函数，而出现错误</p><h2 id="用法"><a href="#用法" class="headerlink" title="用法"></a>用法</h2><p>定义命名空间时使用namespace，后面接定义空间的名称并且接{}，然后再{}中接空间成员</p><p>命名空间可以嵌套，类似C语言中的循环嵌套，但是命名空间只能在全局范围内定义</p><p>使用命名空间内成语有三种方法</p><p>第一：使用作用域限定符<a><a href="https://blog.csdn.net/2302_78391795/article/details/142230911">【C++指南】作用域限定符 :: 使用详解_c++ 限定作用域-CSDN博客</a></a></p><p>第二：将命名空间全部展开（cpp using namespace xxx）</p><p>此方法有风险，三思而后行</p><p>第三：将命名空间部分展开（ using XXX :: xxx;）<br>可以在不全部展开的情况下不使用作用域限定符！！！</p><h2 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h2><p>这个概念适用于c++与c#，其他语言部分可用但是不推荐</p>]]></content>
     
     
       
       
     <summary type="html">&lt;img src=&quot;https://www.keaitupian.cn/cjpic/frombd/2/253/33528619/2562967573.jpg&quot;&gt;
 
-&lt;h2 id=&quot;定义&quot;&gt;&lt;a href=&quot;#定义&quot; class=&quot;headerlink&quot; title=&quot;定义&quot;&gt;&lt;/</summary>
+
+
+
+    &lt;figure class=&quot;figure-image&quot;&gt;
+      &lt;img src=&quot;http:</summary>
       
     
     
