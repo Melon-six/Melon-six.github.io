@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title></title>
+      <link href="/2024/12/04/%E5%91%BD%E5%90%8D%E7%A9%BA%E9%97%B4/"/>
+      <url>/2024/12/04/%E5%91%BD%E5%90%8D%E7%A9%BA%E9%97%B4/</url>
+      
+        <content type="html"><![CDATA[<hr><p>title：命名空间</p><p>date：2024-12-4</p><hr><p>##定义</p><p>命名空间主要是为了解决同一作用域中定义重复的元素而导致代码混乱，命名空间通过全局作用域分割独立空间来解决以上问题</p><p>##实例</p><p>#include&lt;stdio.h&gt;<br>int rand &#x3D; 10;<br>int main()<br>{<br>    printf(“%d\n”,rand);<br>    return 0;<br>}</p><p>此时正常，当时如果在头文件中加入rand函数所在的头文件就会出现计算机运行程序时找到了两个rand函数，而出现错误</p><p>##用法</p><p>定义命名空间时使用namespace，后面接定义空间的名称并且接{}，然后再{}中接空间成员</p><p>命名空间可以嵌套，类似C语言中的循环嵌套，但是命名空间只能在全局范围内定义</p><p>使用命名空间内成语有三种方法</p><p>第一：使用作用域限定符<a><a href="https://blog.csdn.net/2302_78391795/article/details/142230911">【C++指南】作用域限定符 :: 使用详解_c++ 限定作用域-CSDN博客</a></a></p><p>第二：将命名空间全部展开（cpp using namespace xxx）</p><p>此方法有风险，三思而后行</p><p>第三：将命名空间部分展开（ using XXX :: xxx;）<br>可以在不全部展开的情况下不使用作用域限定符！！！</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>html</title>
       <link href="/2024/12/02/html/"/>
       <url>/2024/12/02/html/</url>
