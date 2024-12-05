@@ -1,142 +1,142 @@
-window.addEventListener("DOMContentLoaded", function() {
-  const html            = document.querySelector("html");
-  const navBtn          = document.querySelector(".navbar-btn");
-  const navList         = document.querySelector(".navbar-list");
-  const backToTopFixed  = document.querySelector(".back-to-top-fixed");
-  let lastTop           = 0;
-  let lastRefreshTime   = 0;
-  let frameCount        = 0;
-  let refreshRate       = 0;
-  let theme             = window.localStorage.getItem('theme') || '';
-
-  theme && html.classList.add(theme)
-
-
-  /**
-   * 初始化刷新率估计
-   */
-  const estimateRefreshRate = () => {
-      const currentTime = performance.now();
-      if (currentTime - lastRefreshTime >= 1000) { // fps
-          refreshRate = frameCount;
-          frameCount = 0;
-          lastRefreshTime = currentTime;
-      } else {
-          frameCount++;
+(function () {
+  // A Simple EventListener
+  [Element, Document, Window].forEach((target) => {
+    target.prototype._addEventListener = target.prototype.addEventListener;
+    target.prototype._removeEventListener =
+      target.prototype.removeEventListener;
+    target.prototype.addEventListener = target.prototype.on = function (
+      name,
+      listener,
+      options
+    ) {
+      if (!this.__listeners__) {
+        this.__listeners__ = {};
       }
-      requestAnimationFrame(estimateRefreshRate);
-  }
-  
-  estimateRefreshRate();
+      if (!this.__listeners__[name]) {
+        this.__listeners__[name] = [];
+      }
+      // Check if the listener is already added
+      for (let [l, o] of this.__listeners__[name]) {
+        if (l === listener && JSON.stringify(o) === JSON.stringify(options)) {
+          return this; // Listener is already added, do nothing
+        }
+      }
+      this.__listeners__[name].push([listener, options]);
+      this._addEventListener(name, listener, options);
+      return this;
+    };
+    target.prototype.removeEventListener = target.prototype.off = function (
+      name,
+      listener,
+      options
+    ) {
+      if (!this.__listeners__ || !this.__listeners__[name]) {
+        return this;
+      }
+      if (!listener) {
+        // remove all event listeners
+        this.__listeners__[name].forEach(([listener, options]) => {
+          this.removeEventListener(name, listener, options);
+        });
+        delete this.__listeners__[name];
+        return this;
+      }
+      this._removeEventListener(name, listener, options);
+      this.__listeners__[name] = this.__listeners__[name].filter(
+        ([l, o]) =>
+          l !== listener || JSON.stringify(o) !== JSON.stringify(options)
+      );
+      if (this.__listeners__[name].length === 0) {
+        delete this.__listeners__[name];
+      }
+      return this;
+    };
+  });
+  // Simple Selector
+  window._$ = (selector) => document.querySelector(selector);
+  window._$$ = (selector) => document.querySelectorAll(selector);
 
-  const goScrollTop = () => {
-    let currentTop = getScrollTop()
-    let speed = Math.floor(-currentTop / (refreshRate / 6))
-    if (currentTop > lastTop + 0.5 || currentTop < lastTop - 0.5 ) {
-      // interrupt the animation
-      return lastTop = 0
-    }
-    let distance = currentTop + speed;
-    lastTop = distance;
-    document.documentElement.scrollTop = distance;
-    distance > 0 && window.requestAnimationFrame(goScrollTop)
-  }
-
-  const toggleBackToTopBtn = (top) => {
-    top = top || getScrollTop()
-    if (top >= 100) {
-      backToTopFixed.classList.add("show")
+  // dark_mode
+  let mode = window.localStorage.getItem("dark_mode");
+  const setDarkMode = (isDark) => {
+    if (isDark) {
+      document.documentElement.setAttribute("data-theme", "dark");
     } else {
-      backToTopFixed.classList.remove("show")
+      document.documentElement.removeAttribute("data-theme");
     }
+    const iconHtml = `<a id="nav-${
+      isDark ? "sun" : "moon"
+    }-btn" class="nav-icon dark-mode-btn"></a>`;
+    _$("#sub-nav").insertAdjacentHTML("beforeend", iconHtml);
+    document.body.dispatchEvent(
+      new CustomEvent(isDark ? "dark-theme-set" : "light-theme-set")
+    );
+  };
+  if (mode === null) {
+    const domMode = document.documentElement.getAttribute("data-theme");
+    mode = domMode === "dark" ? "true" : "false";
+    window.localStorage.setItem("dark_mode", mode);
   }
+  setDarkMode(mode === "true");
 
-  toggleBackToTopBtn()
-
-  // theme light click
-  document.querySelector('#theme-light').addEventListener('click', function () {
-    html.classList.remove('theme-dark')
-    html.classList.add('theme-light')
-    window.localStorage.setItem('theme', 'theme-light')
-  })
-
-  // theme dark click
-  document.querySelector('#theme-dark').addEventListener('click', function () {
-    html.classList.remove('theme-light')
-    html.classList.add('theme-dark')
-    window.localStorage.setItem('theme', 'theme-dark')
-  })
-
-  // theme auto click
-  document.querySelector('#theme-auto').addEventListener('click', function() {
-    html.classList.remove('theme-light')
-    html.classList.remove('theme-dark')
-    window.localStorage.setItem('theme', '')
-  })
-
-  // mobile nav click
-  navBtn.addEventListener("click", function () {
-    html.classList.toggle("show-mobile-nav");
-    this.classList.toggle("active");
+  _$(".dark-mode-btn").addEventListener("click", function () {
+    const id = this.id;
+    if (id == "nav-sun-btn") {
+      window.localStorage.setItem("dark_mode", "false");
+      document.body.dispatchEvent(new CustomEvent("light-theme-set"));
+      document.documentElement.removeAttribute("data-theme");
+      this.id = "nav-moon-btn";
+    } else {
+      window.localStorage.setItem("dark_mode", "true");
+      document.body.dispatchEvent(new CustomEvent("dark-theme-set"));
+      document.documentElement.setAttribute("data-theme", "dark");
+      this.id = "nav-sun-btn";
+    }
   });
 
-  // mobile nav link click
-  navList.addEventListener("click", function (e) {
-    if (e.target.nodeName == "A" && html.classList.contains("show-mobile-nav")) {
-      navBtn.click()
+  let oldScrollTop = 0;
+  document.addEventListener("scroll", () => {
+    let scrollTop =
+      document.documentElement.scrollTop || document.body.scrollTop;
+    const diffY = scrollTop - oldScrollTop;
+    window.diffY = diffY;
+    oldScrollTop = scrollTop;
+    if (diffY < 0) {
+      _$("#header-nav").classList.remove("header-nav-hidden");
+    } else {
+      _$("#header-nav").classList.add("header-nav-hidden");
     }
-  })
-
-  // click back to top
-  backToTopFixed.addEventListener("click", function () {
-    lastTop = getScrollTop()
-    goScrollTop()
   });
 
-  window.addEventListener("scroll", function () {
-    toggleBackToTopBtn()
-  }, { passive: true });
-
-  /** handle lazy bg iamge */
-  handleLazyBG();
-});
-
-/**
- * 获取当前滚动条距离顶部高度
- *
- * @returns 距离高度
- */
-function getScrollTop () {
-  return window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
-}
-
-function querySelectorArrs (selector) {
-  return Array.from(document.querySelectorAll(selector))
-}
-
-
-function handleLazyBG () {
-  const lazyBackgrounds = querySelectorArrs('[background-image-lazy]')
-  let lazyBackgroundsCount = lazyBackgrounds.length
-  if (lazyBackgroundsCount > 0) {
-    let lazyBackgroundObserver = new IntersectionObserver(function(entries, observer) {
-      entries.forEach(function({ isIntersecting, target }) {
-        if (isIntersecting) {
-          let img = target.dataset.img
-          if (img) {
-            target.style.backgroundImage = `url(${img})`
-          }
-          lazyBackgroundObserver.unobserve(target)
-          lazyBackgroundsCount --
-        }
-        if (lazyBackgroundsCount <= 0) {
-          lazyBackgroundObserver.disconnect()
-        }
-      })
-    })
-
-    lazyBackgrounds.forEach(function(lazyBackground) {
-      lazyBackgroundObserver.observe(lazyBackground)
-    })
+  if (window.Pace) {
+    Pace.on("done", function () {
+      Pace.sources[0].elements = [];
+    });
   }
-}
+})();
+
+var safeImport = async function (url, integrity) {
+  if (!integrity) {
+    return import(url);
+  }
+  const response = await fetch(url);
+  const moduleContent = await response.text();
+
+  const actualHash = await crypto.subtle.digest(
+    "SHA-384",
+    new TextEncoder().encode(moduleContent)
+  );
+  const hashBase64 =
+    "sha384-" + btoa(String.fromCharCode(...new Uint8Array(actualHash)));
+
+  if (hashBase64 !== integrity) {
+    throw new Error(`Integrity check failed for ${url}`);
+  }
+
+  const blob = new Blob([moduleContent], { type: "application/javascript" });
+  const blobUrl = URL.createObjectURL(blob);
+  const module = await import(blobUrl);
+  URL.revokeObjectURL(blobUrl);
+
+  return module;
+};
