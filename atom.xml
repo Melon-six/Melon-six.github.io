@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2024-12-04T16:18:41.033Z</updated>
+  <updated>2024-12-05T00:48:06.974Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,24 +17,19 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>命名空间</title>
-    <link href="http://example.com/2024/12/04/%E5%91%BD%E5%90%8D%E7%A9%BA%E9%97%B4/"/>
-    <id>http://example.com/2024/12/04/%E5%91%BD%E5%90%8D%E7%A9%BA%E9%97%B4/</id>
-    <published>2024-12-03T16:00:00.000Z</published>
-    <updated>2024-12-04T16:18:41.033Z</updated>
+    <title></title>
+    <link href="http://example.com/2024/12/05/2024-12-04-%E5%91%BD%E5%90%8D%E7%A9%BA%E9%97%B4/"/>
+    <id>http://example.com/2024/12/05/2024-12-04-%E5%91%BD%E5%90%8D%E7%A9%BA%E9%97%B4/</id>
+    <published>2024-12-05T00:46:09.888Z</published>
+    <updated>2024-12-05T00:48:06.974Z</updated>
     
-    <content type="html"><![CDATA[<img src="https://www.keaitupian.cn/cjpic/frombd/2/253/33528619/2562967573.jpg">    <figure class="figure-image">      <img src="http://qiniu.sukoshi.xyz/src/images/68686407_p0.jpg" alt="带描述带图片" loading="lazy" />      <figcaption>带描述带图片</figcaption>    </figure>  <h2 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h2><p>命名空间主要是为了解决同一作用域中定义重复的元素而导致代码混乱，命名空间通过全局作用域分割独立空间来解决以上问题</p><h2 id="实例"><a href="#实例" class="headerlink" title="实例"></a>实例</h2><p>#include&lt;stdio.h&gt;<br>int rand &#x3D; 10;<br>int main()<br>{<br>    printf(“%d\n”,rand);<br>    return 0;<br>}</p><p>此时正常，当时如果在头文件中加入rand函数所在的头文件就会出现计算机运行程序时找到了两个rand函数，而出现错误</p><h2 id="用法"><a href="#用法" class="headerlink" title="用法"></a>用法</h2><p>定义命名空间时使用namespace，后面接定义空间的名称并且接{}，然后再{}中接空间成员</p><p>命名空间可以嵌套，类似C语言中的循环嵌套，但是命名空间只能在全局范围内定义</p><p>使用命名空间内成语有三种方法</p><p>第一：使用作用域限定符<a><a href="https://blog.csdn.net/2302_78391795/article/details/142230911">【C++指南】作用域限定符 :: 使用详解_c++ 限定作用域-CSDN博客</a></a></p><p>第二：将命名空间全部展开（cpp using namespace xxx）</p><p>此方法有风险，三思而后行</p><p>第三：将命名空间部分展开（ using XXX :: xxx;）<br>可以在不全部展开的情况下不使用作用域限定符！！！</p><h2 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h2><p>这个概念适用于c++与c#，其他语言部分可用但是不推荐</p>]]></content>
+    <content type="html"><![CDATA[<h2 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h2><p>命名空间主要是为了解决同一作用域中定义重复的元素而导致代码混乱，命名空间通过全局作用域分割独立空间来解决以上问题</p><h2 id="实例"><a href="#实例" class="headerlink" title="实例"></a>实例</h2><p>#include&lt;stdio.h&gt;<br>int rand &#x3D; 10;<br>int main()<br>{<br>    printf(“%d\n”,rand);<br>    return 0;<br>}</p><p>此时正常，当时如果在头文件中加入rand函数所在的头文件就会出现计算机运行程序时找到了两个rand函数，而出现错误</p><h2 id="用法"><a href="#用法" class="headerlink" title="用法"></a>用法</h2><p>定义命名空间时使用namespace，后面接定义空间的名称并且接{}，然后再{}中接空间成员</p><p>命名空间可以嵌套，类似C语言中的循环嵌套，但是命名空间只能在全局范围内定义</p><p>使用命名空间内成语有三种方法</p><p>第一：使用作用域限定符<a><a href="https://blog.csdn.net/2302_78391795/article/details/142230911">【C++指南】作用域限定符 :: 使用详解_c++ 限定作用域-CSDN博客</a></a></p><p>第二：将命名空间全部展开（cpp using namespace xxx）</p><p>此方法有风险，三思而后行</p><p>第三：将命名空间部分展开（ using XXX :: xxx;）<br>可以在不全部展开的情况下不使用作用域限定符！！！</p><h2 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h2><p>这个概念适用于c++与c#，其他语言部分可用但是不推荐</p>]]></content>
     
     
       
       
-    <summary type="html">&lt;img src=&quot;https://www.keaitupian.cn/cjpic/frombd/2/253/33528619/2562967573.jpg&quot;&gt;
-
-
-
-
-    &lt;figure class=&quot;figure-image&quot;&gt;
-      &lt;img src=&quot;http:</summary>
+    <summary type="html">&lt;h2 id=&quot;定义&quot;&gt;&lt;a href=&quot;#定义&quot; class=&quot;headerlink&quot; title=&quot;定义&quot;&gt;&lt;/a&gt;定义&lt;/h2&gt;&lt;p&gt;命名空间主要是为了解决同一作用域中定义重复的元素而导致代码混乱，命名空间通过全局作用域分割独立空间来解决以上问题&lt;/p&gt;
+&lt;h2 id=&quot;实</summary>
       
     
     
@@ -56,26 +51,6 @@
       
     <summary type="html">&lt;h2 id=&quot;html&quot;&gt;&lt;a href=&quot;#html&quot; class=&quot;headerlink&quot; title=&quot;html&quot;&gt;&lt;/a&gt;html&lt;/h2&gt;&lt;!DOCTYPE html&gt;
 &lt;p&gt;这句活就是告诉我们使用那个html版本。&lt;br&gt;只需要记住，看到上面这行代码，说明使用的是h</summary>
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="http://example.com/2024/11/28/hello-world/"/>
-    <id>http://example.com/2024/11/28/hello-world/</id>
-    <published>2024-11-28T01:30:16.537Z</published>
-    <updated>2024-11-28T01:30:16.537Z</updated>
-    
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for</summary>
       
     
     

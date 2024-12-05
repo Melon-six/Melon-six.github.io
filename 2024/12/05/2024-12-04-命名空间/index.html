@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   
-  <title>我的技术与生活——命名空间 | 实验基地</title>
+  <title>我的技术与生活——小站首页 | 实验基地</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="shortcut icon" href="/imgs/shortcut-icon.ico" type="image/x-icon">
   <link rel="stylesheet" href="/css/public.css" />
@@ -16,7 +16,7 @@
 
   <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
   <script>
-    document.title = `我的技术与生活——命名空间`
+    document.title = `我的技术与生活——小站首页`
   </script>
 <meta name="generator" content="Hexo 7.3.0"><link rel="alternate" href="/atom.xml" title="实验基地" type="application/atom+xml">
 </head>
@@ -194,7 +194,7 @@
   const ipt = document.querySelector('#search-input')
   const btn = document.querySelector('#search-btn')
   const layer = document.querySelector('#search-layer')
-  const posts = JSON.parse(`[{"title":"Hello World","path":"2024/11/28/hello-world/"},{"title":"html","path":"2024/12/02/html/"},{"title":"命名空间","path":"2024/12/04/命名空间/"}]`)
+  const posts = JSON.parse(`[{"title":"html","path":"2024/12/02/html/"},{"title":"","path":"2024/12/05/2024-12-04-命名空间/"}]`)
   ipt.addEventListener('keyup', e => {
     if (e.key === 'Enter') {
       handleSearch()
@@ -271,7 +271,7 @@
         </a>
         <a href="/archives">
           <div>
-            <span>2 </span>
+            <span>1 </span>
             <span>归档</span>
           </div>
         </a>
@@ -328,7 +328,7 @@
       </h5>
       <p class="main-left--subtitle">
         <span>文章数目：</span>
-        <span>3 篇</span>
+        <span>2 篇</span>
       </p>
       <p class="main-left--subtitle">
         <span>最近动态：</span>
@@ -352,7 +352,7 @@
 
 <div class="article-container">
   <div class="article">
-    <h1 class="article-title">命名空间</h1>
+    <h1 class="article-title"></h1>
     <div class="article-info">
       <div class="article-info--item">
         <div class="article-info--info">
@@ -368,28 +368,13 @@
             
           </div>
           
-          <p class="article-info--date">日期：2024-12-04 00:00:00</p>
+          <p class="article-info--date">日期：2024-12-05 08:46:09</p>
         </div>
         <img src="/imgs/default-cover.webp" alt="" class="article-cover">
       </div>
     </div>
     <article class="article-content markdown-body">
-      <img src="https://www.keaitupian.cn/cjpic/frombd/2/253/33528619/2562967573.jpg">
-
-
-
-
-    <figure class="figure-image">
-      <img src="http://qiniu.sukoshi.xyz/src/images/68686407_p0.jpg" alt="带描述带图片" loading="lazy" />
-      <figcaption>带描述带图片</figcaption>
-    </figure>
-  
-
-
-
-
-
-<h2 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h2><p>命名空间主要是为了解决同一作用域中定义重复的元素而导致代码混乱，命名空间通过全局作用域分割独立空间来解决以上问题</p>
+      <h2 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h2><p>命名空间主要是为了解决同一作用域中定义重复的元素而导致代码混乱，命名空间通过全局作用域分割独立空间来解决以上问题</p>
 <h2 id="实例"><a href="#实例" class="headerlink" title="实例"></a>实例</h2><p>#include&lt;stdio.h&gt;<br>int rand &#x3D; 10;<br>int main()<br>{<br>    printf(“%d\n”,rand);<br>    return 0;<br>}</p>
 <p>此时正常，当时如果在头文件中加入rand函数所在的头文件就会出现计算机运行程序时找到了两个rand函数，而出现错误</p>
 <h2 id="用法"><a href="#用法" class="headerlink" title="用法"></a>用法</h2><p>定义命名空间时使用namespace，后面接定义空间的名称并且接{}，然后再{}中接空间成员</p>
@@ -405,7 +390,7 @@
     
     <div class="read-nums">
       <!-- id 将作为查询条件 -->
-      <span id="2024/12/04/命名空间/" class="leancloud_visitors" data-flag-title="Your Article Title">
+      <span id="2024/12/05/2024-12-04-命名空间/" class="leancloud_visitors" data-flag-title="Your Article Title">
         <em class="post-meta-item-text">浏览量</em>
         <i class="leancloud-visitors-count"></i>
       </span>
@@ -451,7 +436,7 @@
     recordIP: config.recordIP,
     visitor: config.visitor,
     enableQQ: config.enableQQ,
-    path: '2024/12/04/命名空间/'
+    path: '2024/12/05/2024-12-04-命名空间/'
   })
 </script>
 
