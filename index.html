@@ -1,646 +1,349 @@
 
-
-
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="loading">
 <head>
-  <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
-<meta name="theme-color" content="#FFF">
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>实验基地</title>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="google" content="notranslate" />
+    <meta name="keywords" content="Fechin,"> 
+    
+    <meta name="author" content="暮寒溪"> 
+    <link rel="alternative" href="atom.xml" title="实验基地" type="application/atom+xml"> 
+    <link rel="icon" href="/img/favicon.png"> 
+    
+    
+    
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:title" content="实验基地"/>
+    
+    
+    
+    
+    
+    <meta property="og:site_name" content="实验基地"/>
+    <meta property="og:type" content="object"/>
+    <meta property="og:title" content="实验基地"/>
+    
+    
+<link rel="stylesheet" href="/css/diaspora.css">
 
-<link rel="icon" type="image/ico" sizes="32x32" href="/images/favicon.ico">
-  <meta http-equiv="Cache-Control" content="no-transform">
-  <meta http-equiv="Cache-Control" content="no-siteapp">
-
-
-<link rel="alternate" type="application/rss+xml" title="实验基地" href="http://example.com/rss.xml" />
-<link rel="alternate" type="application/atom+xml" title="实验基地" href="http://example.com/atom.xml" />
-<link rel="alternate" type="application/json" title="实验基地" href="http://example.com/feed.json" />
-
-<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Mulish:300,300italic,400,400italic,700,700italic%7CFredericka%20the%20Great:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20JP:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20SC:300,300italic,400,400italic,700,700italic%7CInconsolata:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
-
-<link rel="stylesheet" href="/css/app.css?v=0.2.5">
-
-  
-
-<link rel="canonical" href="http://example.com/">
-
-
-
-  <title>Yume Shoka = 实验基地</title>
+    <script>window.searchDbPath = "/search.xml";</script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
 <meta name="generator" content="Hexo 4.2.1"></head>
-<body itemscope itemtype="http://schema.org/WebPage">
-  <div id="loading">
-    <div class="cat">
-      <div class="body"></div>
-      <div class="head">
-        <div class="face"></div>
-      </div>
-      <div class="foot">
-        <div class="tummy-end"></div>
-        <div class="bottom"></div>
-        <div class="legs left"></div>
-        <div class="legs right"></div>
-      </div>
-      <div class="paw">
-        <div class="hands left"></div>
-        <div class="hands right"></div>
-      </div>
-    </div>
-  </div>
-  <div id="container">
-    <header id="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="inner">
-        <div id="brand">
-          <div class="pjax">
-          
-            <a href="/" class="logo" rel="start"><p class="artboard">Yume Shoka</p>
-              <h1 itemprop="name headline" class="title">实验基地</h1>
-            </a>
-          
-          </div>
+
+<body class="loading">
+    <span id="config-title" style="display:none">实验基地</span>
+    <div id="loader"></div>
+    <div class="nav">
+    <ul id="menu-menu" class="menu">
+        
+        <li class="pview menu-item menu-item-type-post_type menu-item-object-page">
+            <a href="//" title="首页" target="_blank" rel="noopener">首页</a>
+        </li>
+        
+        <li class="pview menu-item menu-item-type-post_type menu-item-object-page">
+            <a href="/categories/" title="分类" target="_blank" rel="noopener">分类</a>
+        </li>
+        
+        <li class="pview menu-item menu-item-type-post_type menu-item-object-page">
+            <a href="/tags/" title="标签" target="_blank" rel="noopener">标签</a>
+        </li>
+        
+        <li class="pview menu-item menu-item-type-post_type menu-item-object-page">
+            <a href="/archives/" title="归档" target="_blank" rel="noopener">归档</a>
+        </li>
+        
+        <li class="pview menu-item menu-item-type-post_type menu-item-object-page">
+            <a href="/about/" title="关于" target="_blank" rel="noopener">关于</a>
+        </li>
+        
+    </ul>
+	<span class="target"></span>
+	<center>
+	<div class="hitokoto">
+		<span class="typed" id="hitokoto" data-st="true"></span>
+	</div>
+	</center>
+	
+	<p class="footerlinks">
+		<a href="#" class="iconfont icon-null"></a>
+		
+            <a href="/" title="facebook" class="iconfont icon-facebook" target="_blank" rel="noopener"> </a>
+        
+            <a href="/" title="twitter" class="iconfont icon-twitter" target="_blank" rel="noopener"> </a>
+        
+            <a href="/" title="github" class="iconfont icon-github" target="_blank" rel="noopener"> </a>
+        
+            <a href="/img/logo.png" title="wechat" class="iconfont icon-wechat" target="_blank" rel="noopener"> </a>
+        
+            <a href="mailto:xxxx@gmail.com" title="email" class="iconfont icon-email" target="_blank" rel="noopener"> </a>
+        
+		<a href="#" class="iconfont icon-null"></a>
+	</p>
+	
+    <p id="copyright">
+        &copy; 2025 暮寒溪.
+        <span> | </span>Powered by <a href="https://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a>
+        <span> | </span>Theme <a href="https://github.com/Fechin/hexo-theme-diaspora" title="Diaspora" target="_blank" rel="noopener">Diaspora</a> by Fechin
+		
+		<span> | </span><a rel="nofollow" href="http://www.beian.miit.gov.cn" target="_blank">冀ICP备xxxxxxx号</a>
+		
+    </p>
+</div>
+
+<div id="container">
+    
+<div id="screen">
+    <div id="mark">
+        <div class="layer" data-depth="0.4">
+            <img src="/img/welcome-cover.jpg" id="cover" crossorigin="anonymous" width="1920" height="1080">
         </div>
-        <nav id="nav">
-  <div class="inner">
-    <div class="toggle">
-      <div class="lines" aria-label="Toggle navigation bar">
-        <span class="line"></span>
-        <span class="line"></span>
-        <span class="line"></span>
-      </div>
     </div>
-    <ul class="menu">
-      <li class="item title"><a href="/" rel="start">Yume Shoka</a></li>
-    </ul>
-    <ul class="right">
-      <li class="item theme">
-        <i class="ic i-sun"></i>
-      </li>
-      <li class="item search">
-        <i class="ic i-search"></i>
-      </li>
-    </ul>
-  </div>
-</nav>
-
-      </div>
-      <div id="imgs" class="pjax">
-        <ul>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giclflwv2aj20zk0m84qp.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipewkhf1zj20zk0m81kx.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gicli9lfebj20zk0m84qp.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipeybxm1pj20zk0m8niv.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giclfw2t96j20zk0m8x6p.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipevgoki5j20zk0m84qp.jpg"></li>
-        </ul>
-      </div>
-    </header>
-    <div id="waves">
-      <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
-        <defs>
-          <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
-        </defs>
-        <g class="parallax">
-          <use xlink:href="#gentle-wave" x="48" y="0" />
-          <use xlink:href="#gentle-wave" x="48" y="3" />
-          <use xlink:href="#gentle-wave" x="48" y="5" />
-          <use xlink:href="#gentle-wave" x="48" y="7" />
-        </g>
-      </svg>
+    <div id="vibrant">
+        <svg viewbox="0 0 2880 1620" height="100%" preserveaspectratio="xMaxYMax slice">
+            <polygon opacity="0.7" points="2000,1620 0,1620 0,0 600,0 "/>
+        </svg>
+        <div></div>
     </div>
-    <main>
-      <div class="inner">
-        <div id="main" class="pjax">
-          
-  <div class="index wrap">
-    <h2 class="divider">Post List</h2>
-    <div class="segments posts">
-        
-<article class="item">
-  <div class="cover">
-    <a href="/2025/03/01/1%EF%BC%9A/" itemprop="url" title="1："><img data-src="https://tva2.sinaimg.cn/mw690/6833939bly1giclx29mstj20zk0m8hdt.jpg"></a>
-  </div>
-  <div class="info">
+    <div id="header">
+        <div>
+            <a class="image-logo" href="/"></a>
+			
+            <div class="iconfont icon-menu switchmenu"></div>
+        </div>
+    </div>
     
-<div class="meta">
-  <span class="item" title="Created: 2025-03-01 16:35:47">
-    <span class="icon">
-      <i class="ic i-calendar"></i>
-    </span>
-    <time itemprop="dateCreated datePublished" datetime="2025-03-01T16:35:47+08:00">2025-03-01</time>
-  </span>
+    <div id="post0">
+        <p>三月 01, 2025</p>
+        <h2><a href="/2025/03/01/1%EF%BC%9A/" title="1：" class="posttitle">1：</a></h2>
+        <p class="summary">
+data：python1：在python中，非零的值都视为true，而0则为False
+if-else 结构用于...</p>
+    </div>
+    
 </div>
 
-    <h3><a href="/2025/03/01/1%EF%BC%9A/" itemprop="url" title="1：">1：</a></h3>
-    <div class="excerpt">
-        data：python1：在python中，非零的值都视为true，而0则为False
-if-else 结构用于在一个条件为真时执行一段代码，如果条件不成立，则执行另一段代码。
-if-elif-else 结构用于处理多个条件，允许你在多个条件中选择一个进行执行。elif 是“else if”的缩写
-for...
-    </div>
-    <a href="/2025/03/01/1%EF%BC%9A/" itemprop="url" title="1：" class="btn">more...</a>
-  </div>
-</article>
-
+    <div id="primary">
         
-<article class="item">
-  <div class="cover">
-    <a href="/2025/02/28/%E8%B6%8A%E6%9D%83%E6%BC%8F%E6%B4%9E/" itemprop="url" title="越权漏洞"><img data-src="https://tva2.sinaimg.cn/mw690/6833939bly1gicli3sbvtj20zk0m8x6p.jpg"></a>
-  </div>
-  <div class="info">
-    
-<div class="meta">
-  <span class="item" title="Created: 2025-02-28 17:21:57">
-    <span class="icon">
-      <i class="ic i-calendar"></i>
-    </span>
-    <time itemprop="dateCreated datePublished" datetime="2025-02-28T17:21:57+08:00">2025-02-28</time>
-  </span>
+<div class="post">
+    <a href="/2025/02/28/%E8%B6%8A%E6%9D%83%E6%BC%8F%E6%B4%9E/" title="越权漏洞">
+        <img src="/img/welcome-cover.jpg" class="cover" width="680" height="440">
+    </a>
+    <div class="else">
+        <p>二月 28, 2025</p>
+        <h3><a href="/2025/02/28/%E8%B6%8A%E6%9D%83%E6%BC%8F%E6%B4%9E/" title="越权漏洞" class="posttitle">越权漏洞</a></h3>
+        <p>
+data:玄境靶场
+
+越权漏洞理解：分为水平越权与垂直越权以及逻辑问题导致的安全隐患，水平越权就是用户之间的权限漏洞，垂直越权则是用户与管理员直接的权限...</p>
+    </div>
 </div>
 
-    <h3><a href="/2025/02/28/%E8%B6%8A%E6%9D%83%E6%BC%8F%E6%B4%9E/" itemprop="url" title="越权漏洞">越权漏洞</a></h3>
-    <div class="excerpt">
-        data:玄境靶场
 
-越权漏洞理解：分为水平越权与垂直越权以及逻辑问题导致的安全隐患，水平越权就是用户之间的权限漏洞，垂直越权则是用户与管理员直接的权限漏洞；逻辑暂时不理解1：能够通过抓包直接直接更改自己账户uid2：通过抓包发现可以更改用户类型，将自己账户类型更改为管理员（注意看清楚自己越权对象，管理员一般为admin小写）3：参数置空支付漏洞理解在支付中，前端会向后端传输数据与参数，以便后端返回支付界面或其他，以及进行数据加密
-1：直接修改商品金额2：由于后端限制，商品金额不能为负数或者0，修改商品数量与优惠券金额，使得相加为0，从而骗过后端登录漏洞1：当遇到只能用以及有的账户登录时可以尝...
-    </div>
-    <a href="/2025/02/28/%E8%B6%8A%E6%9D%83%E6%BC%8F%E6%B4%9E/" itemprop="url" title="越权漏洞" class="btn">more...</a>
-  </div>
-</article>
-
-        
-<article class="item">
-  <div class="cover">
-    <a href="/2024/12/27/%E6%9F%A5%E6%89%BEqq/" itemprop="url" title="查找qq"><img data-src="https://tva2.sinaimg.cn/mw690/6833939bly1gicivghyooj20zk0m8dir.jpg"></a>
-  </div>
-  <div class="info">
-    
-<div class="meta">
-  <span class="item" title="Created: 2024-12-27 17:19:04">
-    <span class="icon">
-      <i class="ic i-calendar"></i>
-    </span>
-    <time itemprop="dateCreated datePublished" datetime="2024-12-27T17:19:04+08:00">2024-12-27</time>
-  </span>
-</div>
-
-    <h3><a href="/2024/12/27/%E6%9F%A5%E6%89%BEqq/" itemprop="url" title="查找qq">查找qq</a></h3>
-    <div class="excerpt">
-        查找qq1.网上搜索（qq）社工库
+<div class="post">
+    <a href="/2024/12/27/%E6%9F%A5%E6%89%BEqq/" title="查找qq">
+        <img src="/img/cover.jpg" class="cover" width="680" height="440">
+    </a>
+    <div class="else">
+        <p>十二月 27, 2024</p>
+        <h3><a href="/2024/12/27/%E6%9F%A5%E6%89%BEqq/" title="查找qq" class="posttitle">查找qq</a></h3>
+        <p>查找qq1.网上搜索（qq）社工库
 2.Q绑在线查询
 3.搜索引擎和又一套语法
 （双引号加qq号）
-    </div>
-    <a href="/2024/12/27/%E6%9F%A5%E6%89%BEqq/" itemprop="url" title="查找qq" class="btn">more...</a>
-  </div>
-</article>
 
-        
-<article class="item">
-  <div class="cover">
-    <a href="/2024/12/26/%E6%BC%8F%E6%B4%9E/" itemprop="url" title="漏洞"><img data-src="https://tva2.sinaimg.cn/mw690/6833939bly1giclxp31goj20zk0m8qv5.jpg"></a>
-  </div>
-  <div class="info">
-    
-<div class="meta">
-  <span class="item" title="Created: 2024-12-26 20:51:46">
-    <span class="icon">
-      <i class="ic i-calendar"></i>
-    </span>
-    <time itemprop="dateCreated datePublished" datetime="2024-12-26T20:51:46+08:00">2024-12-26</time>
-  </span>
+
+
+</p>
+    </div>
 </div>
 
-    <h3><a href="/2024/12/26/%E6%BC%8F%E6%B4%9E/" itemprop="url" title="漏洞">漏洞</a></h3>
-    <div class="excerpt">
-        漏洞文件下载漏洞判断文件是否存在文件下载漏洞：
+
+<div class="post">
+    <a href="/2024/12/26/%E6%BC%8F%E6%B4%9E/" title="漏洞">
+        <img src="/img/cover.jpg" class="cover" width="680" height="440">
+    </a>
+    <div class="else">
+        <p>十二月 26, 2024</p>
+        <h3><a href="/2024/12/26/%E6%BC%8F%E6%B4%9E/" title="漏洞" class="posttitle">漏洞</a></h3>
+        <p>漏洞文件下载漏洞判断文件是否存在文件下载漏洞：
 1.
 一般链接形式：
-date.php?file&amp;#x3D;
-date.php?path&amp;#x3D;
+date.php?file&#x3D;
+date.php?path&#x3D;
 2
-包含参数：
-&amp;amp;src&amp;#x3D;
-&amp;amp;ata&amp;#x3D;
-目录穿越: ..&amp;#x2F;返回上一级目录
-​ 返回根目录多加几个..&amp;#x2F;
-文件上传漏洞通过获取webshell来控制服务器最快的方法
-webshell木马程序基于http协议来访问控制
+...</p>
     </div>
-    <a href="/2024/12/26/%E6%BC%8F%E6%B4%9E/" itemprop="url" title="漏洞" class="btn">more...</a>
-  </div>
-</article>
-
-        
-<article class="item">
-  <div class="cover">
-    <a href="/2024/12/26/SQL%E6%B3%A8%E5%85%A5/" itemprop="url" title="SQL注入"><img data-src="https://tva2.sinaimg.cn/mw690/6833939bly1gipey84bjtj20zk0m8hdt.jpg"></a>
-  </div>
-  <div class="info">
-    
-<div class="meta">
-  <span class="item" title="Created: 2024-12-26 18:49:33">
-    <span class="icon">
-      <i class="ic i-calendar"></i>
-    </span>
-    <time itemprop="dateCreated datePublished" datetime="2024-12-26T18:49:33+08:00">2024-12-26</time>
-  </span>
 </div>
 
-    <h3><a href="/2024/12/26/SQL%E6%B3%A8%E5%85%A5/" itemprop="url" title="SQL注入">SQL注入</a></h3>
-    <div class="excerpt">
-        SQL注入SQL注入分为整型和字符型
-    </div>
-    <a href="/2024/12/26/SQL%E6%B3%A8%E5%85%A5/" itemprop="url" title="SQL注入" class="btn">more...</a>
-  </div>
-</article>
 
-        
-<article class="item">
-  <div class="cover">
-    <a href="/2024/12/26/%E6%B8%97%E9%80%8F%E7%9F%A5%E8%AF%86%EF%BC%881%EF%BC%89/" itemprop="url" title="渗透知识（1）"><img data-src="https://tva2.sinaimg.cn/mw690/6833939bly1gipetfk5zwj20zk0m8e81.jpg"></a>
-  </div>
-  <div class="info">
-    
-<div class="meta">
-  <span class="item" title="Created: 2024-12-26 10:45:23">
-    <span class="icon">
-      <i class="ic i-calendar"></i>
-    </span>
-    <time itemprop="dateCreated datePublished" datetime="2024-12-26T10:45:23+08:00">2024-12-26</time>
-  </span>
+<div class="post">
+    <a href="/2024/12/26/SQL%E6%B3%A8%E5%85%A5/" title="SQL注入">
+        <img src="/img/cover.jpg" class="cover" width="680" height="440">
+    </a>
+    <div class="else">
+        <p>十二月 26, 2024</p>
+        <h3><a href="/2024/12/26/SQL%E6%B3%A8%E5%85%A5/" title="SQL注入" class="posttitle">SQL注入</a></h3>
+        <p>SQL注入SQL注入分为整型和字符型
+</p>
+    </div>
 </div>
 
-    <h3><a href="/2024/12/26/%E6%B8%97%E9%80%8F%E7%9F%A5%E8%AF%86%EF%BC%881%EF%BC%89/" itemprop="url" title="渗透知识（1）">渗透知识（1）</a></h3>
-    <div class="excerpt">
-        HTTP超文本传输协议；默认端口为80，用于从万维网服务器传输超文本到本地浏览器协议，主要用于规定客户端和服务器的数据传输格式
-HTTP请求分为请求报文和响应报文
-请求报文分为：请求行，请求头部，空一行（请求正文即请求体有的请求报文可能没有）
-直接在浏览器的地址栏中输入 URL 时，通常不会携带请求体
-请求行分为三部分：1.请求方法 2.资源地址（资源定位符） 3.HTTP协议和版本号的说明
-请求方法具有：
-1.GET 请求资源
-2.POST 提交资源
-3.Head 获取响应头
-4.DELETE 删除资源
-5.PUT 替换资源
-6.OPTLONS 允许客户端查看服务器性能
-7.TRACE...
-    </div>
-    <a href="/2024/12/26/%E6%B8%97%E9%80%8F%E7%9F%A5%E8%AF%86%EF%BC%881%EF%BC%89/" itemprop="url" title="渗透知识（1）" class="btn">more...</a>
-  </div>
-</article>
 
-        
-<article class="item">
-  <div class="cover">
-    <a href="/2024/12/24/%E6%9F%A5%E8%AF%A2lP%E5%9C%B0%E5%9D%80/" itemprop="url" title="查询lP地址"><img data-src="https://tva2.sinaimg.cn/mw690/6833939bly1gipeun65urj20zk0m81ii.jpg"></a>
-  </div>
-  <div class="info">
-    
-<div class="meta">
-  <span class="item" title="Created: 2024-12-24 00:42:25">
-    <span class="icon">
-      <i class="ic i-calendar"></i>
-    </span>
-    <time itemprop="dateCreated datePublished" datetime="2024-12-24T00:42:25+08:00">2024-12-24</time>
-  </span>
+<div class="post">
+    <a href="/2024/12/26/%E6%B8%97%E9%80%8F%E7%9F%A5%E8%AF%86%EF%BC%881%EF%BC%89/" title="渗透知识（1）">
+        <img src="/img/cover.jpg" class="cover" width="680" height="440">
+    </a>
+    <div class="else">
+        <p>十二月 26, 2024</p>
+        <h3><a href="/2024/12/26/%E6%B8%97%E9%80%8F%E7%9F%A5%E8%AF%86%EF%BC%881%EF%BC%89/" title="渗透知识（1）" class="posttitle">渗透知识（1）</a></h3>
+        <p>HTTP超文本传输协议；默认端口为80，用于从万维网服务器传输超文本到本地浏览器协议，主要用于规定客户端和服务器的数据传输格式
+HTTP请求分为请求报文和...</p>
+    </div>
 </div>
 
-    <h3><a href="/2024/12/24/%E6%9F%A5%E8%AF%A2lP%E5%9C%B0%E5%9D%80/" itemprop="url" title="查询lP地址">查询lP地址</a></h3>
-    <div class="excerpt">
-        查询lP地址Windows：
+
+<div class="post">
+    <a href="/2024/12/24/%E6%9F%A5%E8%AF%A2lP%E5%9C%B0%E5%9D%80/" title="查询lP地址">
+        <img src="/img/welcome-cover.jpg" class="cover" width="680" height="440">
+    </a>
+    <div class="else">
+        <p>十二月 24, 2024</p>
+        <h3><a href="/2024/12/24/%E6%9F%A5%E8%AF%A2lP%E5%9C%B0%E5%9D%80/" title="查询lP地址" class="posttitle">查询lP地址</a></h3>
+        <p>查询lP地址Windows：
 打开命令提示符（按 Win + R，然后输入 cmd，按回车）。
 
 在命令行窗口中，输入以下命令并按回车：
 1bash
 
-1nslookup 网站域名
-
-例如，要查看 www.example.com 的 IP 地址：
-12bashnslookup www.example.com
-
-网站数据库SQL注入获取信息
-通过开发工具F12获取信息
-查询php版本使用 curl 命令查询 HTTP 响应头：12bashcurl -I http:&amp;#x2F;&amp;#x2F;example.com
+1...</p>
     </div>
-    <a href="/2024/12/24/%E6%9F%A5%E8%AF%A2lP%E5%9C%B0%E5%9D%80/" itemprop="url" title="查询lP地址" class="btn">more...</a>
-  </div>
-</article>
-
-        
-<article class="item">
-  <div class="cover">
-    <a href="/2024/12/06/2024-12-06-Java/" itemprop="url" title="Java"><img data-src="https://tva2.sinaimg.cn/mw690/6833939bly1gipexoj0moj20zk0m8kgu.jpg"></a>
-  </div>
-  <div class="info">
-    
-<div class="meta">
-  <span class="item" title="Created: 2024-12-06 00:00:00">
-    <span class="icon">
-      <i class="ic i-calendar"></i>
-    </span>
-    <time itemprop="dateCreated datePublished" datetime="2024-12-06T00:00:00+08:00">2024-12-06</time>
-  </span>
 </div>
 
-    <h3><a href="/2024/12/06/2024-12-06-Java/" itemprop="url" title="Java">Java</a></h3>
-    <div class="excerpt">
-        基础jdk也称Java...
-    </div>
-    <a href="/2024/12/06/2024-12-06-Java/" itemprop="url" title="Java" class="btn">more...</a>
-  </div>
-</article>
 
-        
-<article class="item">
-  <div class="cover">
-    <a href="/2024/12/04/2024-12-04-%E5%91%BD%E5%90%8D%E7%A9%BA%E9%97%B4/" itemprop="url" title="命名空间"><img data-src="https://tva2.sinaimg.cn/mw690/6833939bly1gipewf5l51j20zk0m8b29.jpg"></a>
-  </div>
-  <div class="info">
-    
-<div class="meta">
-  <span class="item" title="Created: 2024-12-04 00:00:00">
-    <span class="icon">
-      <i class="ic i-calendar"></i>
-    </span>
-    <time itemprop="dateCreated datePublished" datetime="2024-12-04T00:00:00+08:00">2024-12-04</time>
-  </span>
+<div class="post">
+    <a href="/2024/12/06/2024-12-06-Java/" title="Java">
+        <img src="/img/cover.jpg" class="cover" width="680" height="440">
+    </a>
+    <div class="else">
+        <p>十二月 06, 2024</p>
+        <h3><a href="/2024/12/06/2024-12-06-Java/" title="Java" class="posttitle">Java</a></h3>
+        <p>基础jdk也称Java jdk，可以理解为Java的库也就是c语言中的头文件吧可能
+sdk则是Java用用于开发软件所存在的一个概念，可以理解为开发工具
+...</p>
+    </div>
 </div>
 
-    <h3><a href="/2024/12/04/2024-12-04-%E5%91%BD%E5%90%8D%E7%A9%BA%E9%97%B4/" itemprop="url" title="命名空间">命名空间</a></h3>
-    <div class="excerpt">
-        定义命名空间主要是为了解决同一作用域中定义重复的元素而导致代码混乱，命名空间通过全局作用域分割独立空间来解决以上问题
-实例#include&amp;lt;stdio.h&amp;gt;int rand &amp;#x3D; 10;int main(){	printf(“%d&#92;n”,rand);	return...
-    </div>
-    <a href="/2024/12/04/2024-12-04-%E5%91%BD%E5%90%8D%E7%A9%BA%E9%97%B4/" itemprop="url" title="命名空间" class="btn">more...</a>
-  </div>
-</article>
 
-        
-<article class="item">
-  <div class="cover">
-    <a href="/2024/12/02/html/" itemprop="url" title="html"><img data-src="https://tva2.sinaimg.cn/mw690/6833939bly1giciuv0socj20zk0m8qes.jpg"></a>
-  </div>
-  <div class="info">
-    
-<div class="meta">
-  <span class="item" title="Created: 2024-12-02 00:00:00">
-    <span class="icon">
-      <i class="ic i-calendar"></i>
-    </span>
-    <time itemprop="dateCreated datePublished" datetime="2024-12-02T00:00:00+08:00">2024-12-02</time>
-  </span>
+<div class="post">
+    <a href="/2024/12/04/2024-12-04-%E5%91%BD%E5%90%8D%E7%A9%BA%E9%97%B4/" title="命名空间">
+        <img src="/img/cover.jpg" class="cover" width="680" height="440">
+    </a>
+    <div class="else">
+        <p>十二月 04, 2024</p>
+        <h3><a href="/2024/12/04/2024-12-04-%E5%91%BD%E5%90%8D%E7%A9%BA%E9%97%B4/" title="命名空间" class="posttitle">命名空间</a></h3>
+        <p>定义命名空间主要是为了解决同一作用域中定义重复的元素而导致代码混乱，命名空间通过全局作用域分割独立空间来解决以上问题
+实例#include&lt;stdi...</p>
+    </div>
 </div>
 
-    <h3><a href="/2024/12/02/html/" itemprop="url" title="html">html</a></h3>
-    <div class="excerpt">
-        html&lt;!DOCTYPE html&gt;
+
+<div class="post">
+    <a href="/2024/12/02/html/" title="html">
+        <img src="/img/cover.jpg" class="cover" width="680" height="440">
+    </a>
+    <div class="else">
+        <p>十二月 02, 2024</p>
+        <h3><a href="/2024/12/02/html/" title="html" class="posttitle">html</a></h3>
+        <p>html
 这句活就是告诉我们使用那个html版本。只需要记住，看到上面这行代码，说明使用的是html5的版本。
 
-utf-8是目前最常用的字符集编码方式，其他的还有gb2312(简单中文)，BIG5(繁体中文)，
-GBK(全部中文字符)，UTF-8(全世界所有国家需要用到的字符！)。
-这里只需要记录UTF-8。
-
-~
-大小依次递减，注意没有&lt;7&gt;啥的，只有这六个！
-用与分隔内容
-
-属性
-
-1.属性采用的是“键值对”的形式，key = &quot;value&quot; 格式(每个键对应着相应的值， 当按下相应的键时，...
+utf-8是目前最常用的字符集编码方式，...</p>
     </div>
-    <a href="/2024/12/02/html/" itemprop="url" title="html" class="btn">more...</a>
-  </div>
-</article>
+</div>
+
 
     </div>
-
-  </div>
-
-  
-
-
-
-        </div>
-        <div id="sidebar">
-          
-<div class="inner">
-
-  <div class="panels">
-    <div class="inner">
-      <div class="contents panel pjax" data-title="Contents">
-      </div>
-      <div class="related panel pjax" data-title="Related">
-      </div>
-      <div class="overview panel" data-title="Overview">
-        <div class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
-  <img class="image" itemprop="image" alt="暮寒溪"
-      data-src="/images/avatar.jpg">
-  <p class="name" itemprop="name">暮寒溪</p>
-  <div class="description" itemprop="description"></div>
-</div>
-
-<nav class="state">
-    <div class="item posts">
-      <a href="/archives/">
-        <span class="count">10</span>
-        <span class="name">posts</span>
-      </a>
-    </div>
-</nav>
-
-<div class="social">
-</div>
-
-<ul class="menu">
-  
     
-  <li class="item">
-    <a href="/" rel="section"><i class="ic i-home"></i>Home</a>
-  </li>
-
-
-</ul>
-
-      </div>
-    </div>
-  </div>
-
-  <ul id="quick">
-    <li class="prev pjax">
-    </li>
-    <li class="up"><i class="ic i-arrow-up"></i></li>
-    <li class="down"><i class="ic i-arrow-down"></i></li>
-    <li class="next pjax">
-    </li>
-    <li class="percent"></li>
-  </ul>
 </div>
-
-        </div>
-        <div class="dimmer"></div>
-      </div>
-    </main>
-    <footer id="footer">
-      <div class="inner">
-        <div class="widgets">
-          
-<div class="rpost pjax">
-  <h2>Random Posts</h2>
-  <ul>
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-</div>
-
-    <span><a href="/2024/12/04/2024-12-04-%E5%91%BD%E5%90%8D%E7%A9%BA%E9%97%B4/" title="命名空间">命名空间</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-</div>
-
-    <span><a href="/2024/12/24/%E6%9F%A5%E8%AF%A2lP%E5%9C%B0%E5%9D%80/" title="查询lP地址">查询lP地址</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-</div>
-
-    <span><a href="/2025/02/28/%E8%B6%8A%E6%9D%83%E6%BC%8F%E6%B4%9E/" title="越权漏洞">越权漏洞</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-</div>
-
-    <span><a href="/2024/12/27/%E6%9F%A5%E6%89%BEqq/" title="查找qq">查找qq</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-</div>
-
-    <span><a href="/2025/03/01/1%EF%BC%9A/" title="1：">1：</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-</div>
-
-    <span><a href="/2024/12/02/html/" title="html">html</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-</div>
-
-    <span><a href="/2024/12/26/%E6%BC%8F%E6%B4%9E/" title="漏洞">漏洞</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-</div>
-
-    <span><a href="/2024/12/26/SQL%E6%B3%A8%E5%85%A5/" title="SQL注入">SQL注入</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-</div>
-
-    <span><a href="/2024/12/06/2024-12-06-Java/" title="Java">Java</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-</div>
-
-    <span><a href="/2024/12/26/%E6%B8%97%E9%80%8F%E7%9F%A5%E8%AF%86%EF%BC%881%EF%BC%89/" title="渗透知识（1）">渗透知识（1）</a></span>
-  </li>
-
-  </ul>
-</div>
-<div>
-  <h2>Recent Comments</h2>
-  <ul class="leancloud-recent-comment"></ul>
-</div>
-
-        </div>
-        <div class="status">
-  <div class="copyright">
-    
-    &copy; 2010 – 
-    <span itemprop="copyrightYear">2025</span>
-    <span class="with-love">
-      <i class="ic i-sakura rotate"></i>
-    </span>
-    <span class="author" itemprop="copyrightHolder">暮寒溪 @ Yume Shoka</span>
-  </div>
-  <div class="powered-by">
-    Powered by <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & Theme.<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2FtZWhpbWUvaGV4by10aGVtZS1zaG9rYQ==">Shoka</span>
-  </div>
-</div>
-
-      </div>
-    </footer>
-  </div>
-<script data-config type="text/javascript">
-  var LOCAL = {
-    path: '',
-    favicon: {
-      show: "（●´3｀●）Goooood",
-      hide: "(´Д｀)Booooom"
-    },
-    search : {
-      placeholder: "Search for Posts",
-      empty: "We didn't find any results for the search: ${query}",
-      stats: "${hits} results found in ${time} ms"
-    },
-    valine: true,fancybox: true,
-    copyright: 'Copied to clipboard successfully! <br> All articles in this blog are licensed under <i class="ic i-creative-commons"></i>BY-NC-SA.',
-    ignores : [
-      function(uri) {
-        return uri.includes('#');
-      },
-      function(uri) {
-        return new RegExp(LOCAL.path+"$").test(uri);
-      }
-    ]
-  };
-</script>
-
-<script src="https://cdn.polyfill.io/v2/polyfill.js"></script>
-
-<script src="//cdn.jsdelivr.net/combine/npm/pace-js@1.0.2/pace.min.js,npm/pjax@0.2.8/pjax.min.js,npm/whatwg-fetch@3.4.0/dist/fetch.umd.min.js,npm/animejs@3.2.0/lib/anime.min.js,npm/algoliasearch@4/dist/algoliasearch-lite.umd.js,npm/instantsearch.js@4/dist/instantsearch.production.min.js,npm/lozad@1/dist/lozad.min.js,npm/quicklink@2/dist/quicklink.umd.js"></script>
-
-<script src="/js/app.js?v=0.2.5"></script>
-
+<div id="preview"></div>
 
 
 
 </body>
+
+
+<script src="//lib.baomitu.com/jquery/1.8.3/jquery.min.js"></script>
+<script src="/js/plugin.js"></script>
+<script src="/js/typed.js"></script>
+<script src="/js/diaspora.js"></script>
+
+
+<link rel="stylesheet" href="/photoswipe/photoswipe.css">
+<link rel="stylesheet" href="/photoswipe/default-skin/default-skin.css">
+
+
+<script src="/photoswipe/photoswipe.min.js"></script>
+<script src="/photoswipe/photoswipe-ui-default.min.js"></script>
+
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                <!--  Controls are self-explanatory. Order can be changed. -->
+                <div class="pswp__counter"></div>
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
 </html>
