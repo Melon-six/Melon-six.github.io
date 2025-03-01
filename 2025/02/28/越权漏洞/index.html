@@ -82,18 +82,14 @@ data:玄境靶场
 <h2 id="越权漏洞"><a href="#越权漏洞" class="headerlink" title="越权漏洞"></a>越权漏洞</h2><h3 id="理解：分为水平越权与垂直越权以及逻辑问题导致的安全隐患，水平越权就是用户之间的权限漏洞，垂直越权则是用户与管理员直接的权限漏洞；逻辑暂时不理解"><a href="#理解：分为水平越权与垂直越权以及逻辑问题导致的安全隐患，水平越权就是用户之间的权限漏洞，垂直越权则是用户与管理员直接的权限漏洞；逻辑暂时不理解" class="headerlink" title="理解：分为水平越权与垂直越权以及逻辑问题导致的安全隐患，水平越权就是用户之间的权限漏洞，垂直越权则是用户与管理员直接的权限漏洞；逻辑暂时不理解"></a>理解：分为水平越权与垂直越权以及逻辑问题导致的安全隐患，水平越权就是用户之间的权限漏洞，垂直越权则是用户与管理员直接的权限漏洞；逻辑暂时不理解</h3><h4 id="1：能够通过抓包直接直接更改自己账户uid"><a href="#1：能够通过抓包直接直接更改自己账户uid" class="headerlink" title="1：能够通过抓包直接直接更改自己账户uid"></a>1：能够通过抓包直接直接更改自己账户uid</h4><h4 id="2：通过抓包发现可以更改用户类型，将自己账户类型更改为管理员（注意看清楚自己越权对象，管理员一般为admin小写）"><a href="#2：通过抓包发现可以更改用户类型，将自己账户类型更改为管理员（注意看清楚自己越权对象，管理员一般为admin小写）" class="headerlink" title="2：通过抓包发现可以更改用户类型，将自己账户类型更改为管理员（注意看清楚自己越权对象，管理员一般为admin小写）"></a>2：通过抓包发现可以更改用户类型，将自己账户类型更改为管理员（注意看清楚自己越权对象，管理员一般为admin小写）</h4><h4 id="3：参数置空"><a href="#3：参数置空" class="headerlink" title="3：参数置空"></a>3：参数置空</h4><h2 id="支付漏洞"><a href="#支付漏洞" class="headerlink" title="支付漏洞"></a>支付漏洞</h2><h3 id="理解"><a href="#理解" class="headerlink" title="理解"></a>理解</h3><p>在支付中，前端会向后端传输数据与参数，以便后端返回支付界面或其他，以及进行数据加密</p>
 <h4 id="1：直接修改商品金额"><a href="#1：直接修改商品金额" class="headerlink" title="1：直接修改商品金额"></a>1：直接修改商品金额</h4><h4 id="2：由于后端限制，商品金额不能为负数或者0，修改商品数量与优惠券金额，使得相加为0，从而骗过后端"><a href="#2：由于后端限制，商品金额不能为负数或者0，修改商品数量与优惠券金额，使得相加为0，从而骗过后端" class="headerlink" title="2：由于后端限制，商品金额不能为负数或者0，修改商品数量与优惠券金额，使得相加为0，从而骗过后端"></a>2：由于后端限制，商品金额不能为负数或者0，修改商品数量与优惠券金额，使得相加为0，从而骗过后端</h4><h2 id="登录漏洞"><a href="#登录漏洞" class="headerlink" title="登录漏洞"></a>登录漏洞</h2><h3 id="1：当遇到只能用以及有的账户登录时可以尝试admin等常见账户"><a href="#1：当遇到只能用以及有的账户登录时可以尝试admin等常见账户" class="headerlink" title="1：当遇到只能用以及有的账户登录时可以尝试admin等常见账户"></a>1：当遇到只能用以及有的账户登录时可以尝试admin等常见账户</h3><h4 id="2：可以通过修改返回值来跳过前端验证"><a href="#2：可以通过修改返回值来跳过前端验证" class="headerlink" title="2：可以通过修改返回值来跳过前端验证"></a>2：可以通过修改返回值来跳过前端验证</h4>
             <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
-            <audio id="audio" loop="1" preload="auto" controls="controls" data-autoplay="false">
+            <audio id="audio" loop="1" preload="auto" controls="controls" data-autoplay="true">
                 <source type="audio/mpeg" src="">
             </audio>
             
                 <ul id="audio-list" style="display:none">
                     
                         
-                            <li title="0" data-url="http://link.hhtjim.com/163/425570952.mp3"></li>
-                        
-                    
-                        
-                            <li title="1" data-url="http://link.hhtjim.com/163/425570952.mp3"></li>
+                            <li title="0" data-url="https://www.hifiti.com/thread-17621.htm"></li>
                         
                     
                 </ul>
@@ -114,6 +110,10 @@ data:玄境靶场
 
 
     </div>
+    
+        <div class="side">
+            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#越权漏洞"><span class="toc-number">1.</span> <span class="toc-text">越权漏洞</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#理解：分为水平越权与垂直越权以及逻辑问题导致的安全隐患，水平越权就是用户之间的权限漏洞，垂直越权则是用户与管理员直接的权限漏洞；逻辑暂时不理解"><span class="toc-number">1.1.</span> <span class="toc-text">理解：分为水平越权与垂直越权以及逻辑问题导致的安全隐患，水平越权就是用户之间的权限漏洞，垂直越权则是用户与管理员直接的权限漏洞；逻辑暂时不理解</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1：能够通过抓包直接直接更改自己账户uid"><span class="toc-number">1.1.1.</span> <span class="toc-text">1：能够通过抓包直接直接更改自己账户uid</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2：通过抓包发现可以更改用户类型，将自己账户类型更改为管理员（注意看清楚自己越权对象，管理员一般为admin小写）"><span class="toc-number">1.1.2.</span> <span class="toc-text">2：通过抓包发现可以更改用户类型，将自己账户类型更改为管理员（注意看清楚自己越权对象，管理员一般为admin小写）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3：参数置空"><span class="toc-number">1.1.3.</span> <span class="toc-text">3：参数置空</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#支付漏洞"><span class="toc-number">2.</span> <span class="toc-text">支付漏洞</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#理解"><span class="toc-number">2.1.</span> <span class="toc-text">理解</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1：直接修改商品金额"><span class="toc-number">2.1.1.</span> <span class="toc-text">1：直接修改商品金额</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2：由于后端限制，商品金额不能为负数或者0，修改商品数量与优惠券金额，使得相加为0，从而骗过后端"><span class="toc-number">2.1.2.</span> <span class="toc-text">2：由于后端限制，商品金额不能为负数或者0，修改商品数量与优惠券金额，使得相加为0，从而骗过后端</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#登录漏洞"><span class="toc-number">3.</span> <span class="toc-text">登录漏洞</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1：当遇到只能用以及有的账户登录时可以尝试admin等常见账户"><span class="toc-number">3.1.</span> <span class="toc-text">1：当遇到只能用以及有的账户登录时可以尝试admin等常见账户</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#2：可以通过修改返回值来跳过前端验证"><span class="toc-number">3.1.1.</span> <span class="toc-text">2：可以通过修改返回值来跳过前端验证</span></a></li></ol></li></ol></li></ol>
+        </div>
     
 </div>
 
