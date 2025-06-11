@@ -30,7 +30,7 @@
     "hexo-tag-aplayer": "^3.0.4",
     "hexo-theme-landscape": "^1.0.0",
     "hexo-theme-memory": "github:artchen/hexo-theme-memory",
-    "hexo-theme-reimu": "^1.1.0",
+    "hexo-theme-reimu": "^1.8.5",
     "hexo-theme-shokax": "^0.4.20",
     "pangu": "^4.0.7",
     "sass": "^1.82.0"
