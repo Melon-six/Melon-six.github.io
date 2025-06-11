@@ -1,0 +1,46 @@
+{
+  "name": "hexo-site",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "build": "hexo generate",
+    "clean": "hexo clean",
+    "deploy": "hexo deploy",
+    "server": "hexo server"
+  },
+  "hexo": {
+    "version": "4.2.1"
+  },
+  "dependencies": {
+    "axios": "^1.7.9",
+    "hexo": "^4.2.1",
+    "hexo-deployer-git": "^4.0.0",
+    "hexo-generator-archive": "^2.0.0",
+    "hexo-generator-category": "^2.0.0",
+    "hexo-generator-feed": "^3.0.0",
+    "hexo-generator-index": "^4.0.0",
+    "hexo-generator-json-content": "^4.2.3",
+    "hexo-generator-search": "^2.4.3",
+    "hexo-generator-tag": "^2.0.0",
+    "hexo-renderer-ejs": "^2.0.0",
+    "hexo-renderer-marked": "^7.0.0",
+    "hexo-renderer-sass": "^0.5.0",
+    "hexo-renderer-stylus": "^3.0.1",
+    "hexo-server": "^3.0.0",
+    "hexo-tag-aplayer": "^3.0.4",
+    "hexo-theme-landscape": "^1.0.0",
+    "hexo-theme-memory": "github:artchen/hexo-theme-memory",
+    "hexo-theme-reimu": "^1.1.0",
+    "hexo-theme-shokax": "^0.4.20",
+    "pangu": "^4.0.7",
+    "sass": "^1.82.0"
+  },
+  "description": "2333213123123",
+  "main": "index.js",
+  "devDependencies": {
+    "coffee-script": "^1.12.7"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
