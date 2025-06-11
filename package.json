@@ -31,7 +31,7 @@
     "hexo-theme-landscape": "^1.0.0",
     "hexo-theme-memory": "github:artchen/hexo-theme-memory",
     "hexo-theme-reimu": "^1.1.0",
-    "hexo-theme-shokax": "^0.4.20",
+    "hexo-theme-shokax": "^0.5.1",
     "pangu": "^4.0.7",
     "sass": "^1.82.0"
   },
